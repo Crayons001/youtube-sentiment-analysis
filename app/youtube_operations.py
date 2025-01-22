@@ -79,7 +79,12 @@ class YouTubeOperations:
         except Exception as e:
             print(f"An error occurred: {e}")
 
-        return pd.DataFrame(comments)
+        comments_df = pd.DataFrame(comments)
+
+        if len(comments_df) > 1100:
+            comments_df = comments_df.head(1100)
+
+        return comments_df
 
 
 
