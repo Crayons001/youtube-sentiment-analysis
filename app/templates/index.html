@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<form action="{{ url_for('main.index') }}" method="post">
+  {{ form.hidden_tag() }}
+  <div class="px-40 flex flex-1 justify-center py-5">
+    <div class="layout-content-container flex flex-col w-[512px] max-w-[512px] py-5 max-w-[960px] flex-1">
+      <div class="flex flex-wrap justify-between gap-3 p-4">
+        <p class="text-white tracking-light text-[32px] font-bold leading-tight min-w-72">
+          Paste your YouTube Video URL below
+        </p>
+      </div>
+      <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+        <label class="flex flex-col min-w-40 flex-1">
+          {{ form.link.label }}
+          {{ form.link(class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white focus:outline-0 focus:ring-0 border border-[#543b43] bg-[#271c1f] focus:border-[#543b43] h-14 placeholder:text-[#b99da6] p-[15px] text-base font-normal leading-normal") }}
+        </label>
+      </div>
+      <div class="flex px-4 py-3">
+        {{ form.submit(class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-5 flex-1 bg-[#ec135b] text-white text-base font-bold leading-normal tracking-[0.015em]") }}
+      </div>
+    </div>
+  </div>
+</form>
+
+{% endblock content %}

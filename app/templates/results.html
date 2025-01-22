@@ -1,0 +1,133 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="layout-container flex h-full grow flex-col">
+<div class="gap-1 px-6 flex flex-1 justify-center py-5">
+    <div class="layout-content-container flex flex-col w-80">
+    <div class="flex h-full min-h-[700px] flex-col justify-between bg-[#181113] p-4">
+        <div class="flex flex-col gap-4">
+        <div class="flex flex-col gap-2">
+            <div class="flex items-center gap-3 px-3 py-2 rounded-xl bg-[#39282e]">
+            <div class="text-white" data-icon="House" data-size="24px" data-weight="fill">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                    d="M224,115.55V208a16,16,0,0,1-16,16H168a16,16,0,0,1-16-16V168a8,8,0,0,0-8-8H112a8,8,0,0,0-8,8v40a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V115.55a16,16,0,0,1,5.17-11.78l80-75.48.11-.11a16,16,0,0,1,21.53,0,1.14,1.14,0,0,0,.11.11l80,75.48A16,16,0,0,1,224,115.55Z"
+                ></path>
+                </svg>
+            </div>
+            <p class="text-white text-sm font-medium leading-normal">Dashboard</p>
+            </div>
+            <div class="flex items-center gap-3 px-3 py-2">
+            <div class="text-white" data-icon="List" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                    d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+                ></path>
+                </svg>
+            </div>
+            <p class="text-white text-sm font-medium leading-normal">Video list</p>
+            </div>
+            <div class="flex items-center gap-3 px-3 py-2">
+            <div class="text-white" data-icon="Tray" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                    d="M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32Zm0,16V152h-28.7A15.86,15.86,0,0,0,168,156.69L148.69,176H107.31L88,156.69A15.86,15.86,0,0,0,76.69,152H48V48Zm0,160H48V168H76.69L96,187.31A15.86,15.86,0,0,0,107.31,192h41.38A15.86,15.86,0,0,0,160,187.31L179.31,168H208v40Z"
+                ></path>
+                </svg>
+            </div>
+            <p class="text-white text-sm font-medium leading-normal">Inbox</p>
+            </div>
+            <div class="flex items-center gap-3 px-3 py-2">
+            <div class="text-white" data-icon="Gear" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                    d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Zm88-29.84q.06-2.16,0-4.32l14.92-18.64a8,8,0,0,0,1.48-7.06,107.21,107.21,0,0,0-10.88-26.25,8,8,0,0,0-6-3.93l-23.72-2.64q-1.48-1.56-3-3L186,40.54a8,8,0,0,0-3.94-6,107.71,107.71,0,0,0-26.25-10.87,8,8,0,0,0-7.06,1.49L130.16,40Q128,40,125.84,40L107.2,25.11a8,8,0,0,0-7.06-1.48A107.6,107.6,0,0,0,73.89,34.51a8,8,0,0,0-3.93,6L67.32,64.27q-1.56,1.49-3,3L40.54,70a8,8,0,0,0-6,3.94,107.71,107.71,0,0,0-10.87,26.25,8,8,0,0,0,1.49,7.06L40,125.84Q40,128,40,130.16L25.11,148.8a8,8,0,0,0-1.48,7.06,107.21,107.21,0,0,0,10.88,26.25,8,8,0,0,0,6,3.93l23.72,2.64q1.49,1.56,3,3L70,215.46a8,8,0,0,0,3.94,6,107.71,107.71,0,0,0,26.25,10.87,8,8,0,0,0,7.06-1.49L125.84,216q2.16.06,4.32,0l18.64,14.92a8,8,0,0,0,7.06,1.48,107.21,107.21,0,0,0,26.25-10.88,8,8,0,0,0,3.93-6l2.64-23.72q1.56-1.48,3-3L215.46,186a8,8,0,0,0,6-3.94,107.71,107.71,0,0,0,10.87-26.25,8,8,0,0,0-1.49-7.06Zm-16.1-6.5a73.93,73.93,0,0,1,0,8.68,8,8,0,0,0,1.74,5.48l14.19,17.73a91.57,91.57,0,0,1-6.23,15L187,173.11a8,8,0,0,0-5.1,2.64,74.11,74.11,0,0,1-6.14,6.14,8,8,0,0,0-2.64,5.1l-2.51,22.58a91.32,91.32,0,0,1-15,6.23l-17.74-14.19a8,8,0,0,0-5-1.75h-.48a73.93,73.93,0,0,1-8.68,0,8,8,0,0,0-5.48,1.74L100.45,215.8a91.57,91.57,0,0,1-15-6.23L82.89,187a8,8,0,0,0-2.64-5.1,74.11,74.11,0,0,1-6.14-6.14,8,8,0,0,0-5.1-2.64L46.43,170.6a91.32,91.32,0,0,1-6.23-15l14.19-17.74a8,8,0,0,0,1.74-5.48,73.93,73.93,0,0,1,0-8.68,8,8,0,0,0-1.74-5.48L40.2,100.45a91.57,91.57,0,0,1,6.23-15L69,82.89a8,8,0,0,0,5.1-2.64,74.11,74.11,0,0,1,6.14-6.14A8,8,0,0,0,82.89,69L85.4,46.43a91.32,91.32,0,0,1,15-6.23l17.74,14.19a8,8,0,0,0,5.48,1.74,73.93,73.93,0,0,1,8.68,0,8,8,0,0,0,5.48-1.74L155.55,40.2a91.57,91.57,0,0,1,15,6.23L173.11,69a8,8,0,0,0,2.64,5.1,74.11,74.11,0,0,1,6.14,6.14,8,8,0,0,0,5.1,2.64l22.58,2.51a91.32,91.32,0,0,1,6.23,15l-14.19,17.74A8,8,0,0,0,199.87,123.66Z"
+                ></path>
+                </svg>
+            </div>
+            <p class="text-white text-sm font-medium leading-normal">Settings</p>
+            </div>
+            <div class="flex items-center gap-3 px-3 py-2">
+            <div class="text-white" data-icon="Question" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                    d="M140,180a12,12,0,1,1-12-12A12,12,0,0,1,140,180ZM128,72c-22.06,0-40,16.15-40,36v4a8,8,0,0,0,16,0v-4c0-11,10.77-20,24-20s24,9,24,20-10.77,20-24,20a8,8,0,0,0-8,8v8a8,8,0,0,0,16,0v-.72c18.24-3.35,32-17.9,32-35.28C168,88.15,150.06,72,128,72Zm104,56A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"
+                ></path>
+                </svg>
+            </div>
+            <p class="text-white text-sm font-medium leading-normal">Help</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+    <div class="flex flex-wrap justify-between gap-3 p-4"><p class="text-white tracking-light text-[32px] font-bold leading-tight min-w-72">Dashboard</p></div>
+    <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Video title: {{ title }}</h2>
+
+    <div class="flex flex-wrap gap-4 p-4">
+        <div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-xl p-6 bg-[#ec135b]">
+        <p class="text-white text-base font-medium leading-normal">Positive</p>
+        <p class="text-white tracking-light text-2xl font-bold leading-tight">{{ positive }}%</p>
+        </div>
+        <div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-xl p-6 bg-[#ec135b]">
+        <p class="text-white text-base font-medium leading-normal">Neutral</p>
+        <p class="text-white tracking-light text-2xl font-bold leading-tight">{{ neutral }}%</p>
+        </div>
+        <div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-xl p-6 bg-[#ec135b]">
+        <p class="text-white text-base font-medium leading-normal">Negative</p>
+        <p class="text-white tracking-light text-2xl font-bold leading-tight">{{ negative }}%</p>
+        </div>
+    </div>
+    <div class="flex flex-col gap-3 p-4">
+        <div class="flex gap-6 justify-between"><p class="text-white text-base font-medium leading-normal">Positive sentiment</p></div>
+        <div class="rounded bg-[#543b43]"><div class="h-2 rounded bg-white" style="width: {{ positive }}%;"></div></div>
+        <p class="text-[#b99da6] text-sm font-normal leading-normal">{{ positive }}%</p>
+    </div>
+    <div class="flex flex-col gap-3 p-4">
+        <div class="flex gap-6 justify-between"><p class="text-white text-base font-medium leading-normal">Neutral sentiment</p></div>
+        <div class="rounded bg-[#543b43]"><div class="h-2 rounded bg-white" style="width: {{ neutral }}%;"></div></div>
+        <p class="text-[#b99da6] text-sm font-normal leading-normal">{{ neutral }}%</p>
+    </div>
+    <div class="flex flex-col gap-3 p-4">
+        <div class="flex gap-6 justify-between"><p class="text-white text-base font-medium leading-normal">Negative sentiment</p></div>
+        <div class="rounded bg-[#543b43]"><div class="h-2 rounded bg-white" style="width: {{ negative }}%;"></div></div>
+        <p class="text-[#b99da6] text-sm font-normal leading-normal">{{ negative }}%</p>
+    </div>
+    <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Comments by sentiment</h2>
+    <div class="flex items-center gap-4 bg-[#181113] px-4 min-h-[72px] py-2">
+        <div
+        class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-fit"
+        style='background-image: url("https://cdn.usegalileo.ai/sdxl10/4321a8ce-0731-4565-a405-6463e755081b.png");'
+        ></div>
+        <div class="flex flex-col justify-center">
+        <p class="text-white text-base font-medium leading-normal line-clamp-1">{{ pos_comment }}</p>
+        <p class="text-[#b99da6] text-sm font-normal leading-normal line-clamp-2">Top Positive • 1h ago</p>
+        </div>
+    </div>
+    <div class="flex items-center gap-4 bg-[#181113] px-4 min-h-[72px] py-2">
+        <div
+        class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-fit"
+        style='background-image: url("https://cdn.usegalileo.ai/sdxl10/3a7ae356-fb8c-4c13-87cd-e513886d2cfe.png");'
+        ></div>
+        <div class="flex flex-col justify-center">
+        <p class="text-white text-base font-medium leading-normal line-clamp-1">{{ neu_comment }}</p>
+        <p class="text-[#b99da6] text-sm font-normal leading-normal line-clamp-2">Top Neutral • </p>
+        </div>
+    </div>
+    <div class="flex items-center gap-4 bg-[#181113] px-4 min-h-[72px] py-2">
+        <div
+        class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-fit"
+        style='background-image: url("https://cdn.usegalileo.ai/sdxl10/0c76f4e0-19f2-4c91-9122-46a138f1cf0b.png");'
+        ></div>
+        <div class="flex flex-col justify-center">
+        <p class="text-white text-base font-medium leading-normal line-clamp-1">{{ neg_comment }}</p>
+        <p class="text-[#b99da6] text-sm font-normal leading-normal line-clamp-2">Top Negative • </p>
+        </div>
+    </div>
+    
+    
+    </div>
+</div>
+</div>
+{% endblock content %}
