@@ -73,7 +73,11 @@ class RobertaAnalyzer:
             filtered_df = results_df[results_df['label'] == sentiment]
             if not filtered_df.empty:
                 # Find the comment with the highest number of likes
-                top_comment = filtered_df.loc[filtered_df['like_count'].idxmax()]
+                if sentiment == 'negative':
+                    top_comment = filtered_df.loc[filtered_df['like_count'].idxmin()]
+                else:
+                    top_comment = filtered_df.loc[filtered_df['like_count'].idxmax()]
+                    
                 most_liked[sentiment] = {
                     "text": top_comment['text'],
                     "likes": top_comment['like_count']
