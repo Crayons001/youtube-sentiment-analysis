@@ -1,8 +1,14 @@
 import re
 import pandas as pd
 from googleapiclient.discovery import build
+from dotenv import load_dotenv
+import os
 
-API_KEY = "AIzaSyCZyIERF87OzHD_QbrkiYgXs68jjVZN7dQ"
+load_dotenv()
+
+API_KEY = os.getenv("API_KEY")
+
+# API_KEY = "AIzaSyCZyIERF87OzHD_QbrkiYgXs68jjVZN7dQ"
 
 class YouTubeOperations:
     def __init__(self, link):

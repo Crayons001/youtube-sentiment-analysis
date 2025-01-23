@@ -2,7 +2,7 @@ from flask import render_template, request, redirect, url_for, session
 from app.main import bp
 from app.forms import VideoSubmitForm
 from app.youtube_operations import YouTubeOperations
-from analysis import RobertaAnalyzer
+from app.analysis import RobertaAnalyzer
 
 @bp.route('/', methods=['GET', 'POST'])
 def index():
