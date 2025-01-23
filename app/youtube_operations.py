@@ -81,6 +81,7 @@ class YouTubeOperations:
 
         comments_df = pd.DataFrame(comments)
 
+        # Limiting number of comments to 1100
         if len(comments_df) > 1100:
             comments_df = comments_df.head(1100)
 
