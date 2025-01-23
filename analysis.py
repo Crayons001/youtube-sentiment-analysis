@@ -77,7 +77,7 @@ class RobertaAnalyzer:
                     # top_comment = filtered_df.loc[filtered_df['like_count'].idxmin()]
                     top_comment = filtered_df.loc[filtered_df['score'].idxmax()]
                 else:
-                    top_comment = filtered_df.loc[filtered_df['like_count'].idxmax()]
+                    top_comment = filtered_df.loc[filtered_df['score'].idxmax()]
 
                 most_liked[sentiment] = {
                     "text": top_comment['text'],
